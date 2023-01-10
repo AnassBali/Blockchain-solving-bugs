@@ -1,3 +1,7 @@
+// This utils contract is intended to be inherited by concrete (actual) contracts. 
+// Therefore/ it's initializer function should not use the initializer modifier, but onlyInitializing instead.
+
+
 //BEFORE 
 
    /// @notice initialize method for EIP712Upgradeable
