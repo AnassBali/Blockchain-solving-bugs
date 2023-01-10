@@ -1,3 +1,0 @@
-contract Pool is IPool, OwnableUpgradeable, UUPSUpgradeable {
-	function _authorizeUpgrade(address) internal override onlyOwner {}
-	...
