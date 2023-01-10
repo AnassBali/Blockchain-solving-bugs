@@ -1,0 +1,2 @@
+This utils contract is intended to be inherited by concrete (actual) contracts. Therefore, its initializer function should not use the initializer modifier
+but onlyInitializing instead.
