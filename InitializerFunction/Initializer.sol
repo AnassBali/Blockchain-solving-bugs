@@ -21,7 +21,7 @@ function initializeEIP712(string memory _name, string memory _version)
 
 abstract contract EIP712MetaTransaction is EIP712Upgradeable {
     // ...
-}
+
     /// @notice initialize method for EIP712Upgradeable
     /// @dev called once after initial deployment.
     /// @param _name the user readable name of the signing domain for EIP712
@@ -34,4 +34,5 @@ abstract contract EIP712MetaTransaction is EIP712Upgradeable {
         version = _version;
 
         __EIP712_init(_name, _version);
+    }
     }
