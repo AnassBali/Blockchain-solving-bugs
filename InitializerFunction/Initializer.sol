@@ -4,7 +4,9 @@
     /// @dev called once after initial deployment and every upgrade.
     /// @param _name the user readable name of the signing domain for EIP712
     /// @param _version the current major version of the signing domain for EIP712
-    function initializeEIP712(string memory _name, string memory _version)
+abstract contract EIP712Upgradeable is Initializable {
+
+function initializeEIP712(string memory _name, string memory _version)
         public
         initializer
     {
@@ -13,7 +15,7 @@
 
         __EIP712_init(_name, _version);
     }
-
+}
 
 //FIXED
 
